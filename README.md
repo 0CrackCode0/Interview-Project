@@ -57,6 +57,9 @@ Features:
 Backend runs on:
 http://127.0.0.1:8000/
 
+Django Admin : Username : Admin , Passport : Admin
+http://127.0.0.1:8000/admin
+
 ----------------------------------------
   FRONTEND SETUP (REACT)
 ----------------------------------------
