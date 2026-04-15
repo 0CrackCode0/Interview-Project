@@ -26,8 +26,6 @@ urlpatterns = [
     path('api/login/', TokenObtainPairView.as_view()),
     path('api/', include('backendApp.urls')),
 
-    # React app (catch ALL routes)
+    # React app (MUST be last)
     re_path(r'^.*$', index),
-    # (r'^.*$') Any route not starting with /api/ or /admin/ # Will return index.html # React Router handles it
-    # Make sure: path('api/', ...) comes BEFORE: re_path(r'^.*$', index) Otherwise API routes will break.
 ]
