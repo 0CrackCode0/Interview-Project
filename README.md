@@ -55,9 +55,9 @@ Features:
    python manage.py runserver
 
 Backend runs on:
-http://127.0.0.1:8000/
+"/api/"/
 
-http://127.0.0.1:8000/admin/login
+"/api/"/admin/login
 Django Admin : Username : Admin , Passport : Admin
 
 ----------------------------------------
@@ -148,7 +148,7 @@ RUN FULL PROJECT (DJANGO SERVES FRONTEND)
 
 3. Open:
 
-   http://127.0.0.1:8000/
+   "/api/"/
 
 ----------------------------------------
  DEPLOYMENT (RECOMMENDED: RENDER)
