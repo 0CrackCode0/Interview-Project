@@ -57,8 +57,8 @@ Features:
 Backend runs on:
 http://127.0.0.1:8000/
 
+http://127.0.0.1:8000/admin/login
 Django Admin : Username : Admin , Passport : Admin
-http://127.0.0.1:8000/admin
 
 ----------------------------------------
   FRONTEND SETUP (REACT)
@@ -177,7 +177,7 @@ RUN FULL PROJECT (DJANGO SERVES FRONTEND)
 6. Set in settings.py:
 
    DEBUG = False
-   ALLOWED_HOSTS = ['*']
+   ALLOWED_HOSTS = ["localserver",render_live_url]
 
 7. Deploy
 
