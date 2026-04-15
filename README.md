@@ -183,6 +183,8 @@ RUN FULL PROJECT (DJANGO SERVES FRONTEND)
 
 Live URL:
 https://your-app-name.onrender.com  // I just removed the project from render as i was getting some errors.
+New Update 16/04/2026 : Project is live now on Render - https://interview-project-rzqu.onrender.com/
+Any Query connect me below mentioned email address
 
 ----------------------------------------
  IMPORTANT NOTES
@@ -205,4 +207,4 @@ Designed and Developed by Abdul Ahad
 
 ----------------------------------------
 
-0ab.ahad0@gmail.com
+Any Query? : Connect - 0ab.ahad0@gmail.com
