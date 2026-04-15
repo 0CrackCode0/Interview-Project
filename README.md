@@ -55,9 +55,9 @@ Features:
    python manage.py runserver
 
 Backend runs on:
-"/api/"/
+/api/
 
-"/api/"/admin/login
+/api/admin/login
 Django Admin : Username : Admin , Passport : Admin
 
 ----------------------------------------
@@ -148,7 +148,7 @@ RUN FULL PROJECT (DJANGO SERVES FRONTEND)
 
 3. Open:
 
-   "/api/"/
+   /api/
 
 ----------------------------------------
  DEPLOYMENT (RECOMMENDED: RENDER)

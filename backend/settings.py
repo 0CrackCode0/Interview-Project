@@ -18,7 +18,7 @@ SECRET_KEY = os.environ.get(
     "django-insecure-@q!50a^k^&v*f1hmtjm25o=8dblhj3xj(e-3*k0o517u-r2^6t"
 )
 
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
     "interview-project-rzqu.onrender.com",
