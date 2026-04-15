@@ -17,7 +17,7 @@ class ProjectViewSet(ModelViewSet):
     permission_classes = [IsAuthenticated]
 
     def get_queryset(self):
-        queryset = Project.objects.filter(user=self.request.user)
+        queryset = Project.objects.filter(user=self.request.user).order_by('-id')
 
         search = self.request.query_params.get('search')
         status = self.request.query_params.get('status')
