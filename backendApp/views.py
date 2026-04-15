@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from rest_framework.viewsets import ModelViewSet
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.generics import CreateAPIView
@@ -40,11 +41,15 @@ class TaskViewSet(ModelViewSet):
     permission_classes = [IsAuthenticated]
 
     def get_queryset(self):
-        return Task.objects.filter(project__user=self.request.user)
+        project_id = self.kwargs["project_pk"]
+        return Task.objects.filter(
+            project_id=project_id,
+            project__user=self.request.user
+        )
 
     def perform_create(self, serializer):
         project_id = self.kwargs["project_pk"]
-        project = Project.objects.get(id=project_id)
+        project = get_object_or_404(Project, id=project_id, user=self.request.user)
         serializer.save(project=project)
 
 
